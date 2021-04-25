@@ -444,7 +444,7 @@ dnl Test for X11. Allow compiling without x11 support using the without-x11
 dnl flag
 dnl
 
-AC_ARG_WITH(x11, 
+AC_ARG_WITH(x11,
 	[AC_HELP_STRING([--without-x11], [Disable X11 support])],
 	[disable_x11=yes])
 
@@ -493,7 +493,7 @@ AM_CONDITIONAL(HAVE_LIBEXIF, test x$libexif_pkgconfig = xyes)
 
 GDIPLUS_PKG_LIBS="$GDIPLUS_LIBS"
 GDIPLUS_PKG_CFLAGS="$GDIPLUS_CFLAGS"
- 
+
 AC_SUBST(GDIPLUS_LIBS)
 AC_SUBST(GDIPLUS_CFLAGS)
 AC_SUBST(GDIPLUS_INCLUDES)
@@ -505,8 +505,7 @@ AC_OUTPUT([
 Makefile
 libgdiplus.pc
 libgdiplus0.spec
-src/Makefile
-tests/Makefile])
+src/Makefile])
 
 echo "---"
 echo "Configuration summary"
